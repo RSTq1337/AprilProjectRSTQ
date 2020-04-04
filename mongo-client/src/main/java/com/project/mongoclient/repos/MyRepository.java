@@ -11,4 +11,5 @@ public interface MyRepository extends MongoRepository<Info, String> {
     @Override
     List<Info> findAll();
 
+
 }
