@@ -1,8 +1,10 @@
 package com.project.mongoclient;
 
+
 import com.project.mongoclient.body.Info;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.project.mongoclient.model.Form;
+import com.project.mongoclient.repos.MyRepository;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class Controller {
@@ -17,4 +19,10 @@ public class Controller {
     public Info getMeta(){
          return myRepository.findAll().get(0);
     }
+
+    @PostMapping("/data")
+    public String postMeta(@RequestBody Form form){
+
+    }
+
 }
