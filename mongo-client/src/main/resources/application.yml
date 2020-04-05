@@ -5,6 +5,5 @@ spring:
   application:
     name: mongo-client
   profiles:
-    active: test
+    active: default
 
-management.endpoints.web.exposure.include: env, health, info, refresh

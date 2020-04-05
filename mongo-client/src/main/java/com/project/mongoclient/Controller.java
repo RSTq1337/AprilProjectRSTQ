@@ -8,10 +8,8 @@ import com.project.mongoclient.model.Form;
 import com.project.mongoclient.model.Result;
 import com.project.mongoclient.repos.MyRepository;
 import com.project.mongoclient.repos.NewRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.UnexpectedTypeException;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
